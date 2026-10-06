@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Bui - AI Sales Ops Portfolio</title>
+    <style>
+        :root {
+            --primary: #2b3a4a;
+            --accent: #00a8ff;
+            --bg: #f8f9fa;
+            --text: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #dcdcdc;
+            margin: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent);
+            margin: 10px auto 0;
+        }
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent);
+        }
+        .project-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-top: 0;
+        }
+        .tags {
+            margin: 15px 0;
+        }
+        .tag {
+            display: inline-block;
+            background: #e9ecef;
+            color: #495057;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        .features {
+            padding-left: 20px;
+        }
+        .features li {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: var(--primary);
+            color: white;
+            margin-top: 50px;
+        }
+        
+        /* Print/PDF styles */
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                margin: 20px auto;
+            }
+            .project-card {
+                box-shadow: none;
+                border: 1px solid #eee;
+                border-left: 5px solid var(--accent);
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bùi Ngọc Thành</h1>
+    <p>Sales Operations & AI Integration Specialist</p>
+</header>
+
+<div class="container">
+    <h2 class="section-title">AI Sales Ops Lab</h2>
+    
+    <div class="project-card">
+        <h3 class="project-title">1. Teca Bot Lite (24/7 AI Consulting Assistant)</h3>
+        <div class="tags">
+            <span class="tag">Gemini API</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Render Deployment</span>
+        </div>
+        <p>A lightweight, autonomous AI agent designed to handle initial customer inquiries, qualify leads, and collect contact information outside of business hours.</p>
+        <ul class="features">
+            <li><strong>Always On:</strong> Provides immediate responses to customer questions 24/7 based on a predefined knowledge base (e.g., Lumi English center).</li>
+            <li><strong>Lead Qualification:</strong> Identifies high-intent customers and smoothly requests phone numbers for the human sales team.</li>
+            <li><strong>Seamless Handoff:</strong> Syncs collected leads directly into the CRM (Google Sheets) via API.</li>
+        </ul>
+    </div>
+
+    <div class="project-card">
+        <h3 class="project-title">2. Lightweight AI-Powered CRM</h3>
+        <div class="tags">
+            <span class="tag">Google Sheets</span>
+            <span class="tag">Apps Script</span>
+            <span class="tag">Data Analysis</span>
+        </div>
+        <p>A customized CRM built on Google Sheets that automatically aggregates data from marketing channels and AI bots, providing real-time performance insights.</p>
+        <ul class="features">
+            <li><strong>Automated Data Entry:</strong> Connects with Webhooks/FastAPI to instantly log new leads.</li>
+            <li><strong>Smart Allocation:</strong> Uses predefined rules to assign leads to appropriate sales consultants based on performance metrics and workload.</li>
+            <li><strong>Performance Dashboard:</strong> Visualizes conversion rates, contact success rates, and revenue targets.</li>
+        </ul>
+    </div>
+
+    <div class="project-card">
+        <h3 class="project-title">3. Personal Finance AI Assistant</h3>
+        <div class="tags">
+            <span class="tag">AI Agent</span>
+            <span class="tag">Commission Calculation</span>
+            <span class="tag">LLM Context</span>
+        </div>
+        <p>An internal tool built for sales professionals to track their personal revenue targets, calculate complex commission structures, and manage operational costs.</p>
+        <ul class="features">
+            <li><strong>Dynamic Calculation:</strong> Understands multi-tiered commission policies.</li>
+            <li><strong>Target Tracking:</strong> Helps sales staff monitor their progress towards monthly quotas in real-time.</li>
+            <li><strong>Conversational Interface:</strong> Allows users to ask "How much more do I need to sell to reach the 15% tier?" and receive accurate answers based on their current data.</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>Contact: thanhbn.blue@gmail.com | Phone: 0373123189</p>
+</footer>
+
+</body>
+</html>
